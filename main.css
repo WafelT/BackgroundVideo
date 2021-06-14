@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+#header {
+    position: relative;
+
+    height: 100vh;
+    width: 100%;
+}
+
+#header::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    content: "";
+    background-color: #000;
+    opacity: .3;
+}
+
+h1 {
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+
+    z-index: 10;
+    opacity: .8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__icon {
+    width: 40px;
+    height: 45px;
+}
+
+.logo__name {
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
